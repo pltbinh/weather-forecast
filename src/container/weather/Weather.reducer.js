@@ -11,7 +11,7 @@ export const WEATHER_ACTION = {
  * @param {Object} action The dispatched action
  * @returns
  */
-export const weatherReducer = (state, action) => {
+export const reducer = (state, action) => {
   const { type, payload = {}} = action
   switch(type) {
     case WEATHER_ACTION.GET_WEATHER_START: {
@@ -36,7 +36,8 @@ export const weatherReducer = (state, action) => {
       return {
         ...state,
         loading: false,
-        weatherList: []
+        weatherList: [],
+        city: ''
       }
     }
 

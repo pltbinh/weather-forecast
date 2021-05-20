@@ -7,7 +7,7 @@ import apiService from '../../service/apiService'
 
 import FilterComponent from '../../component/filter/Filter.component'
 import WeatherListComponent from '../../component/weather-list/WeatherList.component'
-import { weatherReducer, WEATHER_ACTION } from './Weather.reducer'
+import { reducer, WEATHER_ACTION } from './Weather.reducer'
 
 /**
  * The weather forecast container which contains a filter search along with
@@ -16,7 +16,7 @@ import { weatherReducer, WEATHER_ACTION } from './Weather.reducer'
  * @returns {Component} The weather container
  */
 export default function WeatherContainer() {
-  const [state, dispatch] = useReducer(weatherReducer, { loading: false, weatherList: [] })
+  const [state, dispatch] = useReducer(reducer, { loading: false, weatherList: [] })
 
   /**
    * Retrieves forecast data from api

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Form, Button, Row, Col, InputGroup } from 'react-bootstrap'
 import './Filter.css'
 
 /**
@@ -40,25 +40,26 @@ export default function FilterComponent({ onFilter, loading, underlineText = '' 
   return (
     <Form onSubmit={onSubmit}>
       <Row>
-        <Col xs='12' md='10'>
+        <Col xs='12' md='12'>
           <Form.Group controlId='searchText'>
-            <Form.Control
-              className='mb-3'
-              type='text'
-              placeholder='Search here'
-              onChange={handleChange}
-            />
+            <InputGroup className="mb-3">
+              <Form.Control
+                type='text'
+                placeholder='Search here'
+                onChange={handleChange}
+              />
+              <InputGroup.Append>
+                <Button
+                  id='btn-filter'
+                  variant='primary'
+                  type='submit'
+                  disabled={loading}
+                >
+                  Search
+                </Button>
+              </InputGroup.Append>
+            </InputGroup>
           </Form.Group>
-        </Col>
-        <Col xs='12' md='2'>
-          <Button
-            id='btn-filter'
-            variant='primary'
-            type='submit'
-            disabled={loading}
-          >
-            Search
-          </Button>
         </Col>
       </Row>
       <Row>
