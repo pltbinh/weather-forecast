@@ -18,10 +18,10 @@ function WeatherItem({ weather }) {
         <Card.Body>
           <Card.Title>{day}</Card.Title>
           <Card.Text>
-            Min: {min}
+            Min: {min}&#8451;
           </Card.Text>
           <Card.Text>
-            Max: {max}
+            Max: {max}&#8451;
           </Card.Text>
         </Card.Body>
       </Card>
