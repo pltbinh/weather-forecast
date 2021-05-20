@@ -6,7 +6,7 @@ const GlobalUpdateContext = React.createContext()
 /**
  * The global context provider
  * This wrapper played as a store to share state between all component across application
- * The children component can consume shared states and update it through updateState also
+ * The children components can consume shared states and update it through updateState also
  *
  * @param {*} children
  * @returns {Component} The global context provider

@@ -35,7 +35,8 @@ export const weatherReducer = (state, action) => {
     case WEATHER_ACTION.GET_WEATHER_ERROR: {
       return {
         ...state,
-        loading: false
+        loading: false,
+        weatherList: []
       }
     }
 

@@ -6,7 +6,7 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom"
+} from 'react-router-dom'
 
 import { GlobalProvider } from './store/GlobalContext'
 import WeatherContainer from './container/weather/Weather.container.js'
@@ -19,18 +19,18 @@ function App() {
       <Router>
         <Nav>
           <Nav.Item>
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
+            <Nav.Link><Link to='/'>Home</Link></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link><Link to="/weather">Weather</Link></Nav.Link>
+            <Nav.Link><Link to='/weather'>Weather</Link></Nav.Link>
           </Nav.Item>
         </Nav>
 
         <Switch>
-          <Route path="/weather">
+          <Route path='/weather'>
             <WeatherContainer />
           </Route>
-          <Route path="/">
+          <Route path='/'>
             <WeatherContainer />
           </Route>
         </Switch>

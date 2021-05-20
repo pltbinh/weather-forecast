@@ -63,7 +63,7 @@ export default function WeatherContainer() {
 
   return (
     <Container fluid>
-      {loading && <Spinner animation="border" variant="primary" />}
+      {loading && <Spinner animation='border' variant='primary' />}
       <FilterComponent
         onFilter={onFilter}
         loading={loading}

@@ -17,7 +17,7 @@ In this application, you can search for 5-days-forecast information of a city by
 ## Technical Note
 
 - Built with [Create React App](https://github.com/facebook/create-react-app) and will use its default configuration (webpack, babel,...)
-- Use [Bootstrap UI](https://www.bootstrap-ui.com) component base for consistent style.
+- Use [React Bootstrap](https://react-bootstrap.github.io) component base for consistent style.
 - Mainly focus on [React Hooks](https://reactjs.org/docs/hooks-intro.html) to build state management system.
 - Use [React Router](https://reactrouter.com/web/guides/quick-start) to control navigation
 - Use both [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) to write sample tests
@@ -41,11 +41,12 @@ The FE server will be run at [http://localhost:3000](http://localhost:3000)
 
 Now you can access local server and start building things up.
 
-For other build, deployment & optimization operations, please see [Create React App document](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For other build, deployment & optimization operations, please see [Create React App deployment document](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Project structure
 
 ```
+├── public                Contains public assets (image, logo, icon,...)
 ├── src
 │   ├── common            Contants, URLs, utilities,... should be placed here
 │   ├── component         Contains all components use accross app
@@ -59,7 +60,7 @@ For other build, deployment & optimization operations, please see [Create React 
 
 ## Run Test
 
-- Simply run `npm run test` to run all the testcases. The test file should have format `*.test.js` for the test runner to detect.
+- Simply run `npm run test` to run all the testcases. The test files should be placed under `__test__` folder and have format `*.test.js` for the test runner to detect.
 - Due to it will be run on Jest, there is a configuration file `./jest.config.js` located at the top level, you can config it accordingly, refer [Jest Config Document](https://jestjs.io/docs/configuration)
 - Run `npm run coverage` to see the coverage report.
 
