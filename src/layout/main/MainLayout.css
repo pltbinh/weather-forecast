@@ -1,0 +1,19 @@
+.content {
+  min-height: 420px;
+}
+
+.header {
+  color: white;
+  background-image: url('../../asset/header.jpg');
+  text-align: center;
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  background: #262936;
+  color: white;
+  font-size: 14px;
+  min-height: 48px;
+}

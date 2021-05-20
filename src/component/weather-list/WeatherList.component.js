@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card, Row, Col } from 'react-bootstrap'
 
+import './WeatherList.css'
+
 /**
  * The weather item, which displays min temp and max temp of a day
  *
@@ -12,7 +14,7 @@ function WeatherItem({ weather }) {
 
   return (
     <Col md='4' xs='6' className='mb-3'>
-      <Card>
+      <Card className='card-item'>
         <Card.Body>
           <Card.Title>{day}</Card.Title>
           <Card.Text>

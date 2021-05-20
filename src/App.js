@@ -1,6 +1,6 @@
-// import logo from './logo.svg';
+import logo from './asset/logo.png';
 import React from 'react'
-import { Nav } from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,27 +11,45 @@ import {
 import { GlobalProvider } from './store/GlobalContext'
 import WeatherContainer from './container/weather/Weather.container.js'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+import MainLayout from './layout/main/MainLayout'
+import HomeLayout from './layout/home/HomeLayout'
+import './App.css'
 
 function App() {
   return (
     <GlobalProvider>
       <Router>
-        <Nav>
-          <Nav.Item>
-            <Nav.Link><Link to='/'>Home</Link></Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link><Link to='/weather'>Weather</Link></Nav.Link>
-          </Nav.Item>
-        </Nav>
+        <Navbar bg='dark'>
+          <Navbar.Brand>
+            <Link to='/'>
+              <img
+                src={logo}
+                width='30'
+                height='30'
+                alt='React Bootstrap logo'
+              />
+            </Link>
+          </Navbar.Brand>
+          <Nav className='main-navbar'>
+            <Nav.Item>
+              <Nav.Link><Link to='/'>Home</Link></Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link><Link to='/weather'>Weather</Link></Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar>
 
         <Switch>
           <Route path='/weather'>
-            <WeatherContainer />
+            <MainLayout>
+              <WeatherContainer />
+            </MainLayout>
           </Route>
           <Route path='/'>
-            <WeatherContainer />
+            <HomeLayout>
+
+            </HomeLayout>
           </Route>
         </Switch>
       </Router>

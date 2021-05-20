@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap'
-import './filter.css'
+import './Filter.css'
 
 /**
  * Filter component which contains 1 simple text input

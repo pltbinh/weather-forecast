@@ -1,0 +1,16 @@
+.home .content {
+  min-height: 420px;
+}
+
+.home .header {
+  color: white;
+  background-image: url('../../asset/header.jpg');
+  text-align: center;
+}
+
+.home .footer {
+  background: #262936;
+  color: white;
+  font-size: 14px;
+  min-height: 50px;
+}

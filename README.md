@@ -49,7 +49,7 @@ For other build, deployment & optimization operations, please see [Create React 
 ├── public                Contains public assets (image, logo, icon,...)
 ├── src
 │   ├── common            Contants, URLs, utilities,... should be placed here
-│   ├── component         Contains all components use accross app
+│   ├── component         Contains all components use across app
 │   ├── container         Container which define action, reducer to manage state
 │   ├── service           API service or 3rd party service should be placed here
 │   ├── store             The store/context that share across components
