@@ -47,6 +47,7 @@ export default function FilterComponent({ onFilter, loading, underlineText = '' 
                 type='text'
                 placeholder='Search here'
                 onChange={handleChange}
+                data-testid='searchText'
               />
               <InputGroup.Append>
                 <Button
@@ -54,6 +55,7 @@ export default function FilterComponent({ onFilter, loading, underlineText = '' 
                   variant='primary'
                   type='submit'
                   disabled={loading}
+                  data-testid='btnSearch'
                 >
                   Search
                 </Button>
@@ -63,7 +65,7 @@ export default function FilterComponent({ onFilter, loading, underlineText = '' 
         </Col>
       </Row>
       <Row>
-        <Form.Text className="text-muted mb-3">
+        <Form.Text className='text-muted mb-3'>
           {underlineText}
         </Form.Text>
       </Row>

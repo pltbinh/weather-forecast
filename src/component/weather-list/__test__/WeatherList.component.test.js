@@ -1,7 +1,7 @@
-import React from 'react';
-import { times } from 'lodash';
+import React from 'react'
+import { times } from 'lodash'
 
-import { screen, render } from '@testing-library/react';
+import { screen, render } from '@testing-library/react'
 import WeatherListComponent from '../WeatherList.component'
 
 // DOM testing
@@ -22,6 +22,17 @@ describe('WeatherListComponent', () => {
     // act
     render(
       <WeatherListComponent data={data}/>
+    )
+    const weatherItem = screen.queryAllByText(/Min/)
+
+    // assert
+    expect(weatherItem.length).toEqual(0)
+  })
+
+  it('should render empty if data is undefined', () => {
+    // act
+    render(
+      <WeatherListComponent />
     )
     const weatherItem = screen.queryAllByText(/Min/)
 

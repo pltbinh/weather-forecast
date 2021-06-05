@@ -5,7 +5,7 @@ import './MainLayout.css'
 export default function MainLayout({ children }) {
   return (
     <>
-      <header>
+      <header data-testid='mainHeader'>
         <Jumbotron fluid className='header'>
           <h1>Weather Forecast Application</h1>
         </Jumbotron>
@@ -13,7 +13,7 @@ export default function MainLayout({ children }) {
       <div className='content'>
         {children}
       </div>
-      <footer>
+      <footer data-testid='mainFooter'>
         <div className='footer mt-3'>
           <p>Designed by pltbinh</p>
         </div>

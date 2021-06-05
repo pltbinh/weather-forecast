@@ -19,6 +19,7 @@ exports[`FilterComponent should display loading state correctly 1`] = `
         >
           <input
             className="form-control"
+            data-testid="searchText"
             id="searchText"
             onChange={[Function]}
             placeholder="Search here"
@@ -29,6 +30,7 @@ exports[`FilterComponent should display loading state correctly 1`] = `
           >
             <button
               className="btn btn-primary"
+              data-testid="btnSearch"
               disabled={true}
               id="btn-filter"
               type="submit"
@@ -71,6 +73,7 @@ exports[`FilterComponent should display underline text correctly 1`] = `
         >
           <input
             className="form-control"
+            data-testid="searchText"
             id="searchText"
             onChange={[Function]}
             placeholder="Search here"
@@ -81,6 +84,7 @@ exports[`FilterComponent should display underline text correctly 1`] = `
           >
             <button
               className="btn btn-primary"
+              data-testid="btnSearch"
               disabled={false}
               id="btn-filter"
               type="submit"
@@ -123,6 +127,7 @@ exports[`FilterComponent should render correctly 1`] = `
         >
           <input
             className="form-control"
+            data-testid="searchText"
             id="searchText"
             onChange={[Function]}
             placeholder="Search here"
@@ -133,6 +138,7 @@ exports[`FilterComponent should render correctly 1`] = `
           >
             <button
               className="btn btn-primary"
+              data-testid="btnSearch"
               disabled={false}
               id="btn-filter"
               type="submit"

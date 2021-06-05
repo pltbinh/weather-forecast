@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterComponent should render correctly 1`] = `
+Array [
+  <header
+    data-testid="homeHeader"
+  >
+    <div
+      className="header jumbotron jumbotron-fluid"
+    >
+      <h1>
+        Home
+      </h1>
+    </div>
+  </header>,
+  <div
+    className="content"
+  />,
+  <footer
+    data-testid="homeFooter"
+  >
+    <div
+      className="footer mb-0"
+    >
+      <p>
+        Designed by pltbinh
+      </p>
+    </div>
+  </footer>,
+]
+`;

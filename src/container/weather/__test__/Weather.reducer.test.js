@@ -32,9 +32,18 @@ describe('Weather reducer', () => {
       // act
       const state = reducer(initialState, { type: WEATHER_ACTION.GET_WEATHER_ERROR })
 
+      // assert
       expect(state.loading).toBeFalsy()
       expect(state.weatherList).toEqual([])
       expect(state.city).toEqual('')
+    })
+
+    it('should return the same state if action is not handled', () => {
+      // act
+      const state = reducer(initialState, { type: 'not-handled-action' })
+
+      // assert
+      expect(state).toEqual(initialState)
     })
   })
 })

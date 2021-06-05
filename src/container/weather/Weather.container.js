@@ -25,7 +25,7 @@ export default function WeatherContainer() {
    * @returns {Void}
    */
   function onFilter(searchText) {
-    dispatch({ type: WEATHER_ACTION.GET_WEATHER_START})
+    dispatch({ type: WEATHER_ACTION.GET_WEATHER_START })
 
     apiService.get(`${GET_WEATHER_URL}?q=${searchText}`)
       .then(result => {

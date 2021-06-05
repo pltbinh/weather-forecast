@@ -1,5 +1,5 @@
-import logo from './asset/logo.png';
 import React from 'react'
+import logo from './asset/logo.png';
 import { Nav, Navbar } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
@@ -31,11 +31,11 @@ function App() {
             </Link>
           </Navbar.Brand>
           <Nav className='main-navbar'>
-            <Nav.Item>
-              <Nav.Link><Link to='/'>Home</Link></Nav.Link>
+            <Nav.Item className='mr-3'>
+              <Link to='/'>Home</Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link><Link to='/weather'>Weather</Link></Nav.Link>
+              <Link to='/weather'>Weather</Link>
             </Nav.Item>
           </Nav>
         </Navbar>
@@ -47,9 +47,7 @@ function App() {
             </MainLayout>
           </Route>
           <Route path='/'>
-            <HomeLayout>
-
-            </HomeLayout>
+            <HomeLayout/>
           </Route>
         </Switch>
       </Router>

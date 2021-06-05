@@ -1,5 +1,5 @@
 module.exports = {
   moduleNameMapper: {
-    '\\.(css|less)$': '<rootDir>/test/jest/styleMock.js',
+    '\\.(css|less|png)$': '<rootDir>/test/jest/styleMock.js',
   }
 };

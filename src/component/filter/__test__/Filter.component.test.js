@@ -34,7 +34,7 @@ describe('FilterComponent', () => {
   });
 
   it('should call the callback function when user submit filter form', () => {
-    // arange
+    // arrange
     const mockOnFilter = jest.fn();
     const expectedCall = 1;
 

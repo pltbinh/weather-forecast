@@ -1,4 +1,4 @@
-.main-navbar a {
-  color: white;
+.nav-item a {
+  color: white !important;
   text-decoration: none;
 }

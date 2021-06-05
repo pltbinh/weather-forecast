@@ -2,7 +2,8 @@
   "env": {
     "test": {
       "plugins": [
-        "@babel/plugin-syntax-jsx"
+        "@babel/plugin-syntax-jsx",
+        "@babel/plugin-transform-runtime"
       ],
       "presets": ["@babel/react", "@babel/env"]
     }
